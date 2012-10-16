@@ -1,0 +1,80 @@
+13-outubro-2013 - Alterações iniciadas para começar um novo projeto chamado YPOS
+
+*Add portuguese language (pasta "portuguese" em system e application)
+	- Alterado "/application/views/config.php" para acrescentar o idioma Português
+
+*Corrigidos os atalhos do programa (js/common.js)
+	- Vendas p/ F2
+	- Adicionado a tecla Ctrl + numeração de 1 a 9 para liberar as teclas de Função principalmente a F5.
+		# Ctrl + 1 - Clientes
+		# Ctrl + 2 - Produtos
+		# Ctrl + 3 - Relatórios
+		# Ctrl + 4 - Fornecedores
+		# Ctrl + 5 - Entradas
+		# Ctrl + 6 - Vendas
+		# Ctrl + 7 - Funcionários
+		# Ctrl + 8 - Configurações
+		# Ctrl + 9 - Giftcard
+	
+	- Adicionado a descrição do item Vendas (F2)
+		# Linha 13: "/application/language/portugues/module_lang.php"
+		# Outras linhas demais atalhos no mesmo arquivo acima - Falta nos outros idiomas
+
+*Corrigido textos que estavam no código para melhoria da Internacionalização para o idioma Portugues.
+	- Search Options - Opções de Pesquisa
+		# Linha 140: "/application/views/items/manage.php" - adicionado a tag php "<?php echo $this->lang->line('common_search_options'); ?>"
+		# Linha 41: /application/language/portugues/common-lang.php - adicionado a variavel "$lang['common_search_options']='Opções de Pesquisa';"
+		# Linha 41: /application/language/english/common-lang.php - adicionado a variavel "$lang['common_search_options']='Search Options';"
+		# Linha 41: /application/language/spanish/common-lang.php - adicionado a variavel "$lang['common_search_options']='Opciones de Busca';"
+
+	- Excel Import
+		# Linha 133: "/application/views/items/manage.php" adicionado a tag ".$this->lang->line('common_excel_import')."		
+		# Linha 42: /application/language/portugues/common-lang.php - adicionado a variável "$lang['common_excel_import']='Importar do Excel';"
+		# Linha 42: /application/language/english/common-lang.php - adicionado a variável "$lang['common_excel_import']='Excel Import';"
+		# Linha 42: /application/language/spanish/common-lang.php - adicionado a variável "$lang['common_excel_import']='Excel Import';"
+		# Linha 68: "/application/views/people/manage.php" adicionado a tag ".$this->lang->line('common_excel_import')."
+
+	- Total Payments e Change Due
+		# Linha 276: /application/views/sales/register.php - adicionado a tag "<?php echo $this->lang->line('sales_payment_total').': ';?>"
+		# Linha 280: /application/views/sales/register.php - adicionado a tag "<?php echo $this->lang->line('sales_change_due').': ';?>"
+		# Linha 79: /application/language/portugues/sales-lang.php - adicionado a variável "$lang['sales_payment_total']='Total de Pagamentos';"
+		# Linha 79: /application/language/english/sales-lang.php - adicionado a variável "$lang['sales_payment_total']='Payments Total';"
+				https://sourceforge.net/account/
+*Adicionado Link no nome da empresa para a pagina Home
+	- Linha 39: "<?php echo anchor("home", $this->config->item('company')); ?>"
+
+*Removido o sublinhado dos links para melhorar o visual
+	- Linha 21,22,23,24 - /css/ospos.css - adicionado o item a e s opção de text-decoration:none
+	- Linha 35 - /css/menubar.css - alterada a opção de text-decoration para none
+
+*Reconhecimento da fonte padrão
+	- Linha 15 - /css/ospos.css - adicionado a linha "font-family:"Lucida Grande",Arial;"
+
+* *Tamanho das janelas thickbox
+	- Linha 185 - /js/thickbox.css - para 1) + 50
+
+*Tamanho dos botões
+	- Alteradas as imagens
+	- Linha 55 - /css/general.css - para 105px
+	- Linha 57 - /css/general.css - small_action_button.gif
+	- Linha 86 - /css/general.css - para 150px
+	- Linha 88 - /css/general.css - big_action_button.png
+
+* (falta) *Alteração de icones
+
+*Cores a ajustes de fontes das tableas
+	- Diversas alterações no /css/tables.css
+	- Diversas alterações no /css/general.css
+	- Diversas alterações no /css/registers.css
+
+@@@@ Novas necessidades
+
+*Melhorar adminsitração de temas e cores
+*Página para configuraçẽos (temas, cores)
+*Inserir ferramentas (calculadora, calendário, bloco de notas)
+*Inserir icones e modernizar o visual
+*Criar e inserir módulo financeiro (conta a pagar, fluxo de caixa)
+
+-------------------------------- base ----------------------------
+* Upgrade to CodeIgniter 2.1.0
+* Various small improvements
