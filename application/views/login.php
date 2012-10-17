@@ -6,6 +6,18 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <title>YPOS - Yttrium Business Solutions</title>
 <script src="<?php echo base_url();?>js/jquery-1.2.6.min.js" type="text/javascript" language="javascript" charset="UTF-8"></script>
+
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
+     	<!-- <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/style.css" /> -->
+		<script src="<?php echo base_url();?>js/cufon-yui.js" type="text/javascript"></script>
+		<script src="<?php echo base_url();?>js/ChunkFive_400.font.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			Cufon.replace('h1',{ textShadow: '1px 1px #fff'});
+			Cufon.replace('h2',{ textShadow: '1px 1px #fff'});
+			Cufon.replace('h3',{ textShadow: '1px 1px #000'});
+			Cufon.replace('.back');
+		</script>
+
 <script type="text/javascript">
 $(document).ready(function()
 {
@@ -16,18 +28,16 @@ $(document).ready(function()
 <body>
 <h1>YPOS - <?php echo $this->config->item('application_version'); ?></h1>
 <h2>Yttrium Business Solutions</h2>
+<!-- <div id="welcome_message">
+		<?php echo $this->lang->line('login_welcome_message'); ?>
+		</div> -->
+<?php echo validation_errors(); ?>
 
 <?php echo form_open('login') ?>
 <div id="container">
-<?php echo validation_errors(); ?>
-	<div id="top">
-	<?php echo $this->lang->line('login_login'); ?>
-	</div>
 	<div id="login_form">
-		<div id="welcome_message">
-		<?php echo $this->lang->line('login_welcome_message'); ?>
-		</div>
-		
+	<h3><?php echo $this->lang->line('login_login'); ?></h3>
+	
 		<div class="form_field_label"><?php echo $this->lang->line('login_username'); ?>: </div>
 		<div class="form_field">
 		<?php echo form_input(array(
@@ -48,6 +58,7 @@ $(document).ready(function()
 		</div>
 	</div>
 </div>
+
 <?php echo form_close(); ?>
 </body>
 </html>

@@ -39,6 +39,7 @@ $lang['sales_return']='Return';
 $lang['sales_confirm_finish_sale'] = 'Are you sure you want to submit this sale? This cannot be undone.';
 $lang['sales_confirm_cancel_sale'] = 'Are you sure you want to clear this sale? All items will cleared.';
 $lang['sales_cash'] = 'Cash';
+$lang['sales_promiss'] = 'Promissory';
 $lang['sales_check'] = 'Check';
 $lang['sales_debit'] = 'Debit Card';
 $lang['sales_credit'] = 'Credit Card';

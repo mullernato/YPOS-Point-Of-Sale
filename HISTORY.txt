@@ -69,6 +69,7 @@
 
 @@@@ Novas necessidades
 
+*Adicionar meta tags e palavras chaves.
 *Melhorar adminsitração de temas e cores
 *Página para configuraçẽos (temas, cores)
 *Inserir ferramentas (calculadora, calendário, bloco de notas)

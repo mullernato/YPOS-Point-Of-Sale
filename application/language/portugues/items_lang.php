@@ -65,7 +65,7 @@ $lang['items_inventory_comments']='Comentários';
 $lang['items_count']='Acerto de Estoque';
 $lang['items_details_count']='Detalhes do Estoque';
 $lang['items_add_minus']='Adicionar/Diminuir do estoque';
-$lang['items_current_quantity']='Quantidade Autual';
+$lang['items_current_quantity']='Quantidade Atual';
 $lang['items_quantity_required']='Quantidade é um campo obrigatório.';
 $lang['items_do_nothing'] = 'Nada a fazer';
 $lang['items_change_all_to_serialized'] = 'Alterar tudo para Com Serial';
@@ -76,4 +76,8 @@ $lang['items_use_inventory_menu'] = 'Usar Menu Estoque';
 $lang['items_manually_editing_of_quantity'] = 'Quantidade editada manualmente';
 $lang['items_inventory'] = 'Estoque';
 $lang['items_location'] = 'Localização';
+$lang['items_inventory_data_tracking'] = 'Movimento do Estoque';
+$lang['items_data'] = 'Data';
+$lang['items_in_out_qty'] = 'Qtd Ent/Sai';
+$lang['items_remarks'] = 'Observações';
 ?>

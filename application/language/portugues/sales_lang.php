@@ -39,6 +39,7 @@ $lang['sales_return']='Retornar';
 $lang['sales_confirm_finish_sale'] = 'Deseja finalizar a venda? Essa operação não pode ser desfeita.';
 $lang['sales_confirm_cancel_sale'] = 'Deseja cancelar a venda? Todos os itens serão removidos.';
 $lang['sales_cash'] = 'Dinheiro';
+$lang['sales_promiss'] = 'Promissória';
 $lang['sales_check'] = 'Cheque';
 $lang['sales_debit'] = 'Cartão Débito';
 $lang['sales_credit'] = 'Cartão Crédito';
